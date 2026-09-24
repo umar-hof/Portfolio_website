@@ -1,0 +1,21 @@
+# Taste
+- Defaults to Next.js (App Router) with TypeScript as the framework/language of choice for web projects. Confidence: 0.85
+- Wants TypeScript in strict mode. Confidence: 0.85
+- Prefers Tailwind CSS for styling. Confidence: 0.85
+- Prefers no separate backend service unless clearly required — keep API/backend logic in the same app (Next.js Route Handlers / Server Actions) rather than spinning up a separate Python server. Confidence: 0.75
+- Uses React Hook Form + Zod for forms and validation. Confidence: 0.7
+- Uses Supabase (Postgres) for persistence, with explicit SQL schema and row-level security. Confidence: 0.7
+- Uses Framer Motion and Lucide icons for UI motion/iconography, but wants animation kept restrained. Confidence: 0.6
+- Targets Vercel for deployment. Confidence: 0.6
+- Strongly insists that nothing be fabricated: never invent projects, clients, testimonials, statistics, metrics, links or results. Unsupplied content should be rendered as obvious, greppable placeholders rather than plausible-looking filler. Confidence: 0.95
+- Prefers content kept out of UI components in structured, typed data files so pages/derived routes/sitemap update automatically. Confidence: 0.8
+- Prefers reusable, well-factored component architecture over large monolithic page components. Confidence: 0.75
+- Cares about accessibility: semantic HTML, keyboard navigation, visible focus states, ARIA labels where needed, sufficient color contrast (WCAG AA), accessible forms, and respecting `prefers-reduced-motion`. Confidence: 0.85
+- Cares about performance: optimized images, lazy-loading, minimal client-side JavaScript, and preferring server components / server boundaries. Confidence: 0.85
+- Wants thorough technical SEO: metadata, Open Graph, Twitter cards, canonical URLs, sitemap, robots.txt, structured data, semantic headings, image alt text. Confidence: 0.8
+- Wants security handled properly: secrets in environment variables, never in client-side code, plus server-side validation, rate limiting and spam protection. Confidence: 0.8
+- Prefers a systematic, phased workflow: establish architecture/design system first, then build section by section, validating (build/lint/typecheck/verification) after each major step rather than emitting a huge amount of code in one shot. Confidence: 0.85
+- Values verification against a real running build (smoke-testing routes/APIs, auditing output) over trusting that things compile. Confidence: 0.7
+- Design aesthetic: premium, minimal, modern, dark-first; avoid excessive gradients, glassmorphism, neon/cyberpunk looks, heavy animation, 3D gimmicks and template-feel. Confidence: 0.75
+- Copywriting: clear, confident, human and outcome-focused; avoid buzzwords and clichés ("passionate about technology", "I love coding", "hardworking developer", "can do anything"). Confidence: 0.75
+- Communicates via very detailed, spec-driven, highly structured prompts and expects the agent to execute against the stated spec rather than re-plan from scratch. Confidence: 0.6

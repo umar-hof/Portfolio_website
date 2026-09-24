@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Shell(node --version)",
+      "Shell(npm:*)",
+      "Shell(git:*)",
+      "Shell(npx --yes create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --no-turbopack)",
+      "Shell(npx --yes create-next-app@latest scaffold-tmp --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --no-turbopack)",
+      "powershell",
+      "Shell(node -e \"const l=require('lucide-react'); const want=['Brain','Bot','Database','Code2','Layers','Cpu','Workflow','ArrowRight','ArrowUpRight','Menu','X','Mail','Github','Linkedin','MessageCircle','Sparkles','Network','ShieldCheck','Zap','Search','Rocket','Settings2','FileText','GitBranch','Globe','Server','Boxes','CheckCircle2','ChevronDown','ChevronRight','Phone','Building2','Target','Puzzle','Gauge','Lock','Repeat','Terminal','Cloud','Smartphone','BarChart3','Users','Clock','Calendar','ArrowLeft','ExternalLink','Loader2','AlertCircle','TriangleAlert','Table2','Filter','Route','Plug','Fingerprint','Blocks','Wand2','LineChart','CircleDashed','ScanText','MessageSquare','Send','MapPin','BookOpen','Award','Briefcase','GraduationCap']; const missing=want.filter(w=>!(w in l)); console.log('lucide-react version ok, missing:', missing.length? missing.join(', ') : 'NONE');\")",
+      "Shell(node -e \"const l=require('lucide-react'); const keys=Object.keys(l); console.log('total exports:', keys.length); console.log('brand-ish:', keys.filter(k=>/git|linked|whats|twitter|facebook|slack|discord|chrome|brand/i.test(k)).join(', ')||'NONE');\")",
+      "Shell(node -e \"const m=require('framer-motion'); const want=['motion','AnimatePresence','useReducedMotion','useScroll','useMotionValueEvent','useSpring','useTransform','useInView','LazyMotion','MotionConfig']; console.log('framing check missing:', want.filter(w=>!(w in m)).join(', ')||'NONE');\")",
+      "Shell(powershell -Command Remove-Item -Path C:\\Users\\mumar\\Desktop\\Portfolio_Website\\public\\*.svg -Force)",
+      "Shell(Get-ChildItem:*)",
+      "Shell(Select-Object:*)",
+      "Shell(npx next start -p 3100)",
+      "Shell(powershell -Command \"Start-Sleep -Milliseconds 400; $ErrorActionPreference='SilentlyContinue'; $log='C:\\Users\\mumar\\AppData\\Local\\Temp\\commandcode\\shellout\\2026-09-23T08-19-03-527Z-s23vhuzo.log'; for ($i=0; $i -lt 20; $i++) { if ((Get-Item $log).Length -gt 0) { break }; Start-Sleep -Milliseconds 500 }; Get-Content $log\")",
+      "Shell(powershell -NoProfile -Command \"Get-Content 'C:\\Users\\mumar\\AppData\\Local\\Temp\\commandcode\\shellout\\2026-09-23T08-19-03-527Z-s23vhuzo.log' | Select-String -Pattern 'contact|Supabase|lead' -Context 0,2 | Select-Object -First 20\")",
+      "Shell(powershell -NoProfile -Command \"$l='C:\\Users\\mumar\\AppData\\Local\\Temp\\commandcode\\shellout\\2026-09-23T08-19-03-527Z-s23vhuzo.log'; (Get-Item $l).Length; Get-Content $l -Raw\")",
+      "Shell(node \"C:\\Users\\mumar\\AppData\\Local\\Temp\\commandcode\\C--Users-mumar-Desktop-Portfolio-Website\\828ced13-3b24-43fd-9982-99779bb1217f\\scratchpad\\seo-audit.mjs\")",
+      "Shell(node \"C:\\Users\\mumar\\AppData\\Local\\Temp\\commandcode\\C--Users-mumar-Desktop-Portfolio-Website\\828ced13-3b24-43fd-9982-99779bb1217f\\scratchpad\\inspect.mjs\")",
+      "Shell(powershell -NoProfile -Command \"$ok=$false; for ($i=0; $i -lt 40; $i++) { try { $r = Invoke-WebRequest -Uri 'http://localhost:3100/' -UseBasicParsing -TimeoutSec 3; if ($r.StatusCode -eq 200) { $ok=$true; break } } catch { Start-Sleep -Milliseconds 500 } }; if ($ok) { 'server ready' } else { 'server not ready' }\")",
+      "Shell(powershell -NoProfile -Command \"Write-Output '--- robots.txt ---'; (Invoke-WebRequest 'http://localhost:3100/robots.txt' -UseBasicParsing).Content; Write-Output '--- sitemap.xml ---'; (Invoke-WebRequest 'http://localhost:3100/sitemap.xml' -UseBasicParsing).Content\")",
+      "Shell(node \"C:\\Users\\mumar\\AppData\\Local\\Temp\\commandcode\\C--Users-mumar-Desktop-Portfolio-Website\\828ced13-3b24-43fd-9982-99779bb1217f\\scratchpad\\contrast.mjs\")",
+      "Shell(powershell -NoProfile -Command \"$ok=$false; for ($i=0; $i -lt 40; $i++) { try { $r = Invoke-WebRequest -Uri 'http://localhost:3100/' -UseBasicParsing -TimeoutSec 3; if ($r.StatusCode -eq 200) { $ok=$true; break } } catch { Start-Sleep -Milliseconds 500 } }; if ($ok) { 'ready' } else { 'not ready' }\" node \"C:\\Users\\mumar\\AppData\\Local\\Temp\\commandcode\\C--Users-mumar-Desktop-Portfolio-Website\\828ced13-3b24-43fd-9982-99779bb1217f\\scratchpad\\a11y.mjs\")",
+      "Shell(node \"C:\\Users\\mumar\\AppData\\Local\\Temp\\commandcode\\C--Users-mumar-Desktop-Portfolio-Website\\828ced13-3b24-43fd-9982-99779bb1217f\\scratchpad\\a11y.mjs\")",
+      "Shell(node \"C:\\Users\\mumar\\AppData\\Local\\Temp\\commandcode\\C--Users-mumar-Desktop-Portfolio-Website\\828ced13-3b24-43fd-9982-99779bb1217f\\scratchpad\\verify-findings.mjs\")",
+      "Shell(findstr:*)",
+      "Shell(more:*)"
+    ],
+    "deny": [],
+    "defaultMode": "default"
+  }
+}
